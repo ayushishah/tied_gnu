@@ -20,6 +20,9 @@ echo $this->Html->css('navigation');
 				<ul class="dropdown-menu megamenu row">
 					<li class="col-sm-3">
 						<ul>
+              <?php if(Auth::hasRoles(['developer'])) {?>
+              <li class="dropdown-header">Categories</li>
+              <li><?php echo $this->Html->link(__("New Category",true),array('plugin'=>'support_ticket_system','controller' => 'categories', 'action' => 'add_dev_category')) ?></li><?php } ?>
               <?php if(Auth::hasRoles(['stadmin','superadmin'])) {?>
 							<li class="dropdown-header">Categories</li>
 							<li><?php echo $this->Html->link(__("New Category",true),array('plugin'=>'support_ticket_system','controller' => 'categories', 'action' => 'add')) ?></li>

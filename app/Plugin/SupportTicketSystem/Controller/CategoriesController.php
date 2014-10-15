@@ -51,18 +51,51 @@ class CategoriesController extends SupportTicketSystemAppController {
  *
  * @return void
  */
-	public function add() {
+		public function add() {
 		if ($this->request->is('post')) {
 			$this->Category->create();
+			$this->loadModel('Staff');
       		$this->request->data['Category']['name'] = ucfirst(strtolower($this->request->data['Category']['name']));
-			if ($this->Category->save($this->request->data)) {
+      		$userid = $this->Auth->user('staff_id');
+			$data = $this->Staff->find('first',['conditions'=>['Staff.id'=>$userid]]);
+	    	$this->request->data['Category']['institution_id'] = $data['Staff']['institution_id'];
+			if ($this->Category->save($this->request->data,true,array('name','institution_id','department_id'))) {
 				$this->Session->setFlash(__('The category has been saved.'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The category could not be saved. Please, try again.'));
 			}
 		}
+
+		unset($this->request->data);
+		$this->loadModel('Staff');
+					$userid = $this->Auth->user('staff_id');
+					$instid = $this->Staff->find('first', array('fields' => ['Staff.institution_id'], 'conditions' => array('Staff.id' => $userid)));
+
+		      		$departments = $this->Category->Department->find('list', array(
+		      			'conditions' => array('Department.institution_id' => $instid['Staff']['institution_id'])));
+		      		$this->set(compact('departments'));
 	}
+	
+	public function add_dev_category() {
+		if ($this->request->is('post')){
+			$this->Category->create();
+			$this->request->data['Category']['name'] = ucfirst(strtolower($this->request->data['Category']['name']));
+			if ($this->Category->save($this->request->data,true,array('name','institution_id','department_id'))) {
+				$this->Session->setFlash(__('The category has been saved.'));
+				return $this->redirect(array('action' => 'index'));
+			} else {
+				$this->Session->setFlash(__('The category could not be saved. Please, try again.'));
+			}
+
+		}
+
+		unset($this->request->data);
+		      		$institutions = $this->Category->Institution->find('list');
+		      		$departments = [];
+         			$this->set(compact('institutions','departments'));
+	}
+
 
 /**
  * edit method

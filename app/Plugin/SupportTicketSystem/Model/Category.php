@@ -41,5 +41,6 @@ public $validate = array(
  * @var array
  */
 	public $hasMany = ['SupportTicketSystem.Ticket','SupportTicketSystem.TicketManage'];
+    public $belongsTo = ['Institution','Department'];
 
 }

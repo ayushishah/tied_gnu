@@ -73,12 +73,12 @@ public function deactivate_superadmin($id = null)
 	public function manage_superadmin(){
 		if($this->request->is('post') && $this->request->data['ManageRole']['staff_id'] != 0){
 			$this->ManageRole->create();
-                        $this->request->data['ManageRole']['role_id'] = 1; // role is 1 as it is superadmin MANUALLy set
+                        $this->request->data['ManageRole']['role_id'] = Configure::read('superadmin'); ; // role is 1 as it is superadmin MANUALLy set
 			if ($this->ManageRole->save($this->request->data)){	//saves the data is managerole table
 				$staff_id = $this->request->data['ManageRole']['staff_id']; //staff which we have selected itz id is stored in variable staffid
 			    $data = $this->ManageRole->Role->User->find('first',['conditions'=>['User.staff_id'=>$staff_id]]); // finding that id in USER table
 			    $this->request->data['UserRole']['user_id'] = $data['User']['id']; // appending the user id after findind itz User
-			    $this->request->data['UserRole']['role_id'] = 1; // 1 super admin manually set
+			    $this->request->data['UserRole']['role_id'] = Configure::read('superadmin'); // 1 super admin manually set
 			   if($this->ManageRole->Role->UserRole->save($this->request->data)){ // save data in USERROLE table
 				
 						$this->Session->setFlash(__('The Super Admin has been saved.'), 'alert', array(
@@ -128,7 +128,7 @@ public function deactivate_superadmin($id = null)
                                 $departments = [];
            						$staffs = [];
            						$roles = $this->ManageRole->Role->find('list',array(
-           							'conditions'=>array('Role.id'=>array('3','4','5'))));
+           							'conditions'=>array('Role.id'=>array(Configure::read('stadmin'),Configure::read('tpadmin'),Configure::read('fbadmin')))));
          			$this->set(compact('institutions', 'departments', 'staffs','roles'));
 
     }
@@ -167,7 +167,7 @@ public function deactivate_superadmin($id = null)
 		      					$departments = $this->ManageRole->Department->find('list',array('conditions'=>array('Department.institution_id'=>$instid['Staff']['institution_id'])));
            						$staffs = [];
            						$roles = $this->ManageRole->Role->find('list',array(
-           							'conditions'=>array('Role.id'=>array('3','4','5'))));
+           							'conditions'=>array('Role.id'=>array(Configure::read('stadmin'),Configure::read('tpadmin'),Configure::read('fbadmin')))));
          			$this->set(compact( 'departments', 'staffs','roles'));
 
     }

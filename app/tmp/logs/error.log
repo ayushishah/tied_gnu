@@ -20,3 +20,454 @@ Stack Trace:
 #1 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ManageRolesController), Object(CakeRequest), Object(CakeResponse))
 #2 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2014-10-15 12:13:47 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /gnu/css/rolenavigation.css
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-10-15 12:13:58 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /gnu/css/rolenavigation.css
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-10-15 12:17:54 Error: [MissingActionException] Action ManageRolesController::view_admin() could not be found.
+Exception Attributes: array (
+  'controller' => 'ManageRolesController',
+  'action' => 'view_admin',
+)
+Request URL: /gnu/manageroles/view_admin
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ManageRolesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-15 12:18:03 Error: [MissingActionException] Action ManageRolesController::view_coordinator() could not be found.
+Exception Attributes: array (
+  'controller' => 'ManageRolesController',
+  'action' => 'view_coordinator',
+)
+Request URL: /gnu/manageroles/view_coordinator
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ManageRolesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-15 12:22:24 Error: [MissingControllerException] Controller class StaffsController could not be found.
+Exception Attributes: array (
+  'class' => 'StaffsController',
+  'plugin' => 'SupportTicketSystem',
+)
+Request URL: /gnu/support_ticket_system/staffs/list_staff.json?id=30
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-10-15 12:22:36 Error: [MissingControllerException] Controller class StaffsController could not be found.
+Exception Attributes: array (
+  'class' => 'StaffsController',
+  'plugin' => 'SupportTicketSystem',
+)
+Request URL: /gnu/support_ticket_system/staffs/list_staff.json?id=7
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-10-15 12:22:41 Error: [MissingControllerException] Controller class StaffsController could not be found.
+Exception Attributes: array (
+  'class' => 'StaffsController',
+  'plugin' => 'SupportTicketSystem',
+)
+Request URL: /gnu/support_ticket_system/staffs/list_staff.json?id=1
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-10-15 14:02:40 Error: [MissingActionException] Action CategoriesController::add_dev_category() could not be found.
+Exception Attributes: array (
+  'controller' => 'CategoriesController',
+  'action' => 'add_dev_category',
+)
+Request URL: /gnu/support_ticket_system/categories/add_dev_category
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-15 14:53:07 Error: Fatal Error (4): syntax error, unexpected 'Configure' (T_STRING), expecting function (T_FUNCTION) in [C:\Apache24\htdocs\gnu\app\Controller\ManageRolesController.php, line 18]
+2014-10-15 14:53:07 Error: [FatalErrorException] syntax error, unexpected 'Configure' (T_STRING), expecting function (T_FUNCTION)
+Request URL: /gnu/manageroles/manage_dev_coordinator
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\Apache24\\htd...', 18)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\Apache24\\htd...', 18, Array)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\Apache24\\htd...', 18, Array)
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-15 14:56:44 Error: Fatal Error (4): syntax error, unexpected ',' in [C:\Apache24\htdocs\gnu\app\Controller\ManageRolesController.php, line 170]
+2014-10-15 14:56:44 Error: [FatalErrorException] syntax error, unexpected ','
+Request URL: /gnu/manageroles/manage_dev_coordinator
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\Apache24\\htd...', 170)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\Apache24\\htd...', 170, Array)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\Apache24\\htd...', 170, Array)
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-15 14:57:37 Error: Fatal Error (4): syntax error, unexpected ',' in [C:\Apache24\htdocs\gnu\app\Controller\ManageRolesController.php, line 170]
+2014-10-15 14:57:37 Error: [FatalErrorException] syntax error, unexpected ','
+Request URL: /gnu/manageroles/manage_dev_coordinator
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\Apache24\\htd...', 170)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\Apache24\\htd...', 170, Array)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\Apache24\\htd...', 170, Array)
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-15 14:57:40 Error: Fatal Error (4): syntax error, unexpected ',' in [C:\Apache24\htdocs\gnu\app\Controller\ManageRolesController.php, line 170]
+2014-10-15 14:57:40 Error: [FatalErrorException] syntax error, unexpected ','
+Request URL: /gnu/manageroles/manage_dev_coordinator
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\Apache24\\htd...', 170)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\Apache24\\htd...', 170, Array)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\Apache24\\htd...', 170, Array)
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-15 14:58:21 Error: Fatal Error (4): syntax error, unexpected ',' in [C:\Apache24\htdocs\gnu\app\Controller\ManageRolesController.php, line 170]
+2014-10-15 14:58:21 Error: [FatalErrorException] syntax error, unexpected ','
+Request URL: /gnu/manageroles/manage_dev_coordinator
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\Apache24\\htd...', 170)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\Apache24\\htd...', 170, Array)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\Apache24\\htd...', 170, Array)
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-15 15:00:13 Error: Fatal Error (4): syntax error, unexpected ',' in [C:\Apache24\htdocs\gnu\app\Controller\ManageRolesController.php, line 170]
+2014-10-15 15:00:13 Error: [FatalErrorException] syntax error, unexpected ','
+Request URL: /gnu/manageroles/manage_dev_coordinator
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\Apache24\\htd...', 170)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\Apache24\\htd...', 170, Array)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\Apache24\\htd...', 170, Array)
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-15 15:07:41 Error: Fatal Error (4): syntax error, unexpected ',' in [C:\Apache24\htdocs\gnu\app\Controller\ManageRolesController.php, line 170]
+2014-10-15 15:07:41 Error: [FatalErrorException] syntax error, unexpected ','
+Request URL: /gnu/manageroles/manage_dev_coordinator
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\Apache24\\htd...', 170)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\Apache24\\htd...', 170, Array)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\Apache24\\htd...', 170, Array)
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-15 15:13:06 Error: Fatal Error (4): syntax error, unexpected ',' in [C:\Apache24\htdocs\gnu\app\Controller\ManageRolesController.php, line 170]
+2014-10-15 15:13:06 Error: [FatalErrorException] syntax error, unexpected ','
+Request URL: /gnu/manageroles/manage_dev_coordinator
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\Apache24\\htd...', 170)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\Apache24\\htd...', 170, Array)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\Apache24\\htd...', 170, Array)
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-15 15:13:17 Error: Fatal Error (4): syntax error, unexpected ',' in [C:\Apache24\htdocs\gnu\app\Controller\ManageRolesController.php, line 170]
+2014-10-15 15:13:17 Error: [FatalErrorException] syntax error, unexpected ','
+Request URL: /gnu/manageroles/manage_dev_coordinator
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\Apache24\\htd...', 170)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\Apache24\\htd...', 170, Array)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\Apache24\\htd...', 170, Array)
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-15 15:15:31 Error: Fatal Error (4): syntax error, unexpected ',' in [C:\Apache24\htdocs\gnu\app\Controller\ManageRolesController.php, line 170]
+2014-10-15 15:15:31 Error: [FatalErrorException] syntax error, unexpected ','
+Request URL: /gnu/manageroles/manage_dev_coordinator
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\Apache24\\htd...', 170)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\Apache24\\htd...', 170, Array)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\Apache24\\htd...', 170, Array)
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-15 15:36:39 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\Apache24\htdocs\gnu\app\Plugin\SupportTicketSystem\Controller\CategoriesController.php, line 89]
+2014-10-15 15:36:39 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /gnu/support_ticket_system/categories/add_dev_category
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\Apache24\\htd...', 89)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\Apache24\\htd...', 89, Array)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\Apache24\\htd...', 89, Array)
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-15 15:45:35 Error: Fatal Error (4): syntax error, unexpected '}', expecting ',' or ';' in [C:\Apache24\htdocs\gnu\app\Plugin\SupportTicketSystem\Model\Category.php, line 46]
+2014-10-15 15:45:35 Error: [FatalErrorException] syntax error, unexpected '}', expecting ',' or ';'
+Request URL: /gnu/support_ticket_system/categories/add_dev_category
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\Apache24\\htd...', 46)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\Apache24\\htd...', 46, Array)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\Apache24\\htd...', 46, Array)
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-15 15:51:22 Error: Fatal Error (4): syntax error, unexpected '}', expecting ',' or ';' in [C:\Apache24\htdocs\gnu\app\Plugin\SupportTicketSystem\Model\Category.php, line 46]
+2014-10-15 15:51:22 Error: [FatalErrorException] syntax error, unexpected '}', expecting ',' or ';'
+Request URL: /gnu/support_ticket_system/categories/add_dev_category
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\Apache24\\htd...', 46)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\Apache24\\htd...', 46, Array)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\Apache24\\htd...', 46, Array)
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-15 15:51:37 Error: [MissingViewException] View file "C:\Apache24\htdocs\gnu\app\Plugin\SupportTicketSystem\View\Categories\add_dev_category.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Apache24\\htdocs\\gnu\\app\\Plugin\\SupportTicketSystem\\View\\Categories\\add_dev_category.ctp',
+)
+Request URL: /gnu/support_ticket_system/categories/add_dev_category
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\View\View.php(457): View->_getViewFileName(NULL)
+#1 C:\Apache24\htdocs\gnu\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-10-15 15:53:50 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /gnu/js/staff.js
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-10-15 15:55:38 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /gnu/js/staff.js
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-10-15 15:56:11 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /gnu/js/staff.js
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-10-15 16:02:29 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /gnu/js/staff.js
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-10-15 16:02:50 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /gnu/js/staff.js
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-10-15 16:33:40 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\Apache24\htdocs\gnu\app\Plugin\SupportTicketSystem\Controller\CategoriesController.php, line 72]
+2014-10-15 16:33:40 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /gnu/support_ticket_system/categories/add
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\Apache24\\htd...', 72)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\Apache24\\htd...', 72, Array)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\Apache24\\htd...', 72, Array)
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-15 16:36:41 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /gnu/js/staff.js
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-10-15 16:45:13 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /gnu/js/chained_dropdown.js
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-10-15 16:47:13 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /gnu/js/chained_dropdown.js
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-10-15 16:47:38 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /gnu/js/chained_dropdown.js
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-10-15 16:54:35 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /gnu/js/chained_dropdown.js
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-10-15 16:55:01 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /gnu/js/chained_dropdown.js
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-10-15 16:55:19 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /gnu/js/chained_dropdown.js
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-10-15 16:57:53 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /gnu/js/chained_dropdown.js
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-10-15 16:58:32 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /gnu/js/chained_dropdown.js
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-10-15 16:58:48 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /gnu/js/chained_dropdown.js
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-10-15 17:00:07 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /gnu/js/chained_dropdown.js
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-10-15 17:01:48 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /gnu/js/chained_dropdown.js
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-10-15 17:04:44 Error: [MissingActionException] Action CategoriesController::undefined() could not be found.
+Exception Attributes: array (
+  'controller' => 'CategoriesController',
+  'action' => 'undefined',
+)
+Request URL: /gnu/support_ticket_system/categories/undefined?id=33
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-15 17:05:55 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'institution_id' cannot be null
+Request URL: /gnu/support_ticket_system/categories/add_dev_category
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `gn...', Array)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `gn...')
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Model\Model.php(1832): DboSource->create(Object(Category), Array, Array)
+#4 C:\Apache24\htdocs\gnu\app\Plugin\SupportTicketSystem\Controller\CategoriesController.php(84): Model->save(Array, true, Array)
+#5 [internal function]: CategoriesController->add_dev_category()
+#6 C:\Apache24\htdocs\gnu\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#7 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-10-15 17:06:23 Error: [MissingActionException] Action CategoriesController::undefined() could not be found.
+Exception Attributes: array (
+  'controller' => 'CategoriesController',
+  'action' => 'undefined',
+)
+Request URL: /gnu/support_ticket_system/categories/undefined?id=5
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-15 17:08:10 Error: [MissingActionException] Action CategoriesController::undefined() could not be found.
+Exception Attributes: array (
+  'controller' => 'CategoriesController',
+  'action' => 'undefined',
+)
+Request URL: /gnu/support_ticket_system/categories/undefined?id=33
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-15 17:10:53 Error: [MissingActionException] Action CategoriesController::undefined() could not be found.
+Exception Attributes: array (
+  'controller' => 'CategoriesController',
+  'action' => 'undefined',
+)
+Request URL: /gnu/support_ticket_system/categories/undefined?id=33
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-15 17:18:36 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\Apache24\htdocs\gnu\app\Controller\ManageRolesController.php, line 170]
+2014-10-15 17:18:36 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /gnu/manageroles/manage_dev_coordinator
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\Apache24\\htd...', 170)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\Apache24\\htd...', 170, Array)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\Apache24\\htd...', 170, Array)
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
