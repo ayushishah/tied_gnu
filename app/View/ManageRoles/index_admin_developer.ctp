@@ -1,6 +1,4 @@
-<?php
-echo $this->element('rolenavigation');
-?>
+
 <div class="table-responsive">
 <div class="admins index">
 	<h2><?php echo __('Admins'); ?></h2>

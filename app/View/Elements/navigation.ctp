@@ -16,13 +16,13 @@
       <ul class="nav navbar-nav">
         <li><?php echo $this->Html->link(__("Home"),array('plugin'=>false,'controller' => 'users', 'action' => 'dashboard')) ?></li>
         <li class="dropdown menu-large">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">ST<b class="caret"></b></a>        
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Manage Roles<b class="caret"></b></a>        
         <ul class="dropdown-menu megamenu row">
           <li class="col-sm-3">
             <ul>
               <?php if(Auth::hasRoles(['developer'])) {?>
               <li class="dropdown-header">Manage Super Admins</li>
-              <li><?php echo $this->Html->link(__("New Super Admin",true),array('plugin'=>false,'controller' => 'manage_roles', 'action' => 'manage_superadmin')) ?></li>
+              <li><?php echo $this->Html->link(__("New Super Admin",true),array('plugin'=>false,'controller' => 'manage_roles', 'action' => 'add_superadmin')) ?></li>
               <li><?php echo $this->Html->link(__("View Super Admins",true),array('plugin'=>false,'controller' => 'manage_roles', 'action' => 'index_superadmin'))  ?></li>
               <li class="divider"></li>
               <?php } ?>
@@ -30,12 +30,12 @@
 
               <?php if(Auth::hasRoles(['superadmin'])) {?>
               <li class="dropdown-header">Manage Admin</li>
-              <li><?php echo $this->Html->link(__("New Admin",true),array('plugin'=>false,'controller' => 'manage_roles', 'action' => 'manage_admin')) ?></li>
+              <li><?php echo $this->Html->link(__("New Admin",true),array('plugin'=>false,'controller' => 'manage_roles', 'action' => 'add_admin')) ?></li>
               <?php } ?>
 
               <?php  if(Auth::hasRoles(['developer'])) {?>
               <li class="dropdown-header">Manage Admin</li>
-              <li><?php echo $this->Html->link(__("New Admin",true),array('plugin'=>false,'controller' => 'manage_roles', 'action' => 'manage_dev_admin')) ?></li>
+              <li><?php echo $this->Html->link(__("New Admin",true),array('plugin'=>false,'controller' => 'manage_roles', 'action' => 'add_developer_admin')) ?></li>
               <?php } ?>
 
               <?php if(Auth::hasRoles(['developer'])) {?>
@@ -43,7 +43,7 @@
               <li class="divider"></li>
               <?php } ?>
               <?php if(Auth::hasRoles(['superadmin'])) {?>
-              <li><?php echo $this->Html->link(__("View Admins",true),array('plugin'=>false,'controller' => 'manageroles', 'action' => 'index_admin'))  ?></li>
+              <li><?php echo $this->Html->link(__("View Admins",true),array('plugin'=>false,'controller' => 'manage_roles', 'action' => 'index_admin'))  ?></li>
               <li class="divider"></li>
               <?php } ?>
 
@@ -51,23 +51,19 @@
 
                <?php if(Auth::hasRoles(['developer'])) {?>
               <li class="dropdown-header">Manage Department Coordinator</li>
-              <li><?php echo $this->Html->link(__("New Department Coordinator",true),array('plugin'=>false,'controller' => 'manageroles', 'action' => 'manage_dev_coordinator')) ?></li>
+              <li><?php echo $this->Html->link(__("New Department Coordinator",true),array('plugin'=>false,'controller' => 'manage_roles', 'action' => 'add_developer_deptcoord')) ?></li>
               <?php } ?>
 
               <?php if(Auth::hasRoles(['superadmin','stadmin'])) {?>
               <li class="dropdown-header">Manage Department Coordinator</li>
-              <li><?php echo $this->Html->link(__("New Department Coordinator",true),array('plugin'=>false,'controller' => 'manageroles', 'action' => 'manage_super_coordinator')) ?></li>
+              <li><?php echo $this->Html->link(__("New Department Coordinator",true),array('plugin'=>false,'controller' => 'manage_roles', 'action' => 'add_deptcoord')) ?></li>
               <?php } ?>
 
               <?php if(Auth::hasRoles(['developer','superadmin','stadmin'])) {?>
-              <li><?php echo $this->Html->link(__("View Department Coordinator",true),array('plugin'=>false,'controller' => 'manageroles', 'action' => 'view_coordinator'))  ?></li>
+              <li><?php echo $this->Html->link(__("View Department Coordinator",true),array('plugin'=>false,'controller' => 'manage_roles', 'action' => 'index_deptcoord'))  ?></li>
               <li class="divider"></li>
               <?php } ?>
-
-              <?php if(Auth::hasRoles(['developer'])) {?>
-              <li class="dropdown-header">Manage Categories</li>
-              <li><?php echo $this->Html->link(__("New Category",true),array('plugin'=>'support_ticket_system','controller' => 'categories', 'action' => 'add_dev_category')) ?></li>
-              <?php } ?>        
+         
        </div>
     </div>
     </div>
