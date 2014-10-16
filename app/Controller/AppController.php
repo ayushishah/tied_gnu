@@ -64,7 +64,7 @@ class AppController extends Controller {
          $this->layout = 'bootstrap';
         parent::beforeFilter();
 
-   if (Auth::hasRoles(array('developer')) ) {
+   if (Auth::hasRoles(array('superadmin')) ) {
     	$this->Auth->allow();
    }
         $this->Auth->allow('login','lost_password','change_password_init','change_password','logout');

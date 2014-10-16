@@ -53,7 +53,7 @@ class TicketManagesController extends SupportTicketSystemAppController {
 			    	$staffid = $this->request->data['TicketManage']['staff_id'];
 			    	$data = $this->User->find('first',['conditions'=>['User.staff_id'=>$staffid]]);
 			    	$this->request->data['UserRole']['user_id'] = $data['User']['id'];
-			    	$this->request->data['UserRole']['role_id'] = 5;
+			    	$this->request->data['UserRole']['role_id'] = Configure::read('stcoordinator');
 			    	if($this->UserRole->save($this->request->data)) {
 						$this->Session->setFlash(__('The ticket coordinator has been saved.'));
 						return $this->redirect(array('action' => 'index'));

@@ -77,7 +77,7 @@ class CategoriesController extends SupportTicketSystemAppController {
 		      		$this->set(compact('departments'));
 	}
 	
-	public function add_dev_category() {
+	public function add_developer() {
 		if ($this->request->is('post')){
 			$this->Category->create();
 			$this->request->data['Category']['name'] = ucfirst(strtolower($this->request->data['Category']['name']));
