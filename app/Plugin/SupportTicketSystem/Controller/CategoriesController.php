@@ -67,8 +67,8 @@ class CategoriesController extends SupportTicketSystemAppController {
 			}
 		}
 
-		unset($this->request->data);
-		$this->loadModel('Staff');
+					unset($this->request->data);
+					$this->loadModel('Staff');
 					$userid = $this->Auth->user('staff_id');
 					$instid = $this->Staff->find('first', array('fields' => ['Staff.institution_id'], 'conditions' => array('Staff.id' => $userid)));
 
@@ -173,5 +173,19 @@ class CategoriesController extends SupportTicketSystemAppController {
             return $this->redirect(array('action' => 'index'));
         }
     }
+
+    public function list_category(){
+    		$this->request->onlyAllow('ajax');
+			$id = $this->request->query('id');
+			if (!$id) {
+				throw new NotFoundException();
+			}
+
+			$this->disableCache();
+			$categories = $this->Category->getListByDepartment($id);
+			$this->set(compact('categories'));
+			$this->set('_serialize', array('categories'));
+	}
+
 
 }
