@@ -20,6 +20,17 @@
         <ul class="dropdown-menu megamenu row">
           <li class="col-sm-3">
             <ul>
+
+              <?php if(Auth::hasRoles(['superadmin','developer'])) {?>
+              <li class="dropdown-header">Manage Roles</li>
+              <li><?php echo $this->Html->link(__("New Role",true),array('plugin'=>false,'controller' => 'roles', 
+              'action' => 'add')) ?></li>
+              <li><?php echo $this->Html->link(__("View Roles",true),array('plugin'=>false,'controller' => 'roles',
+               'action' => 'index'))  ?></li>
+              <li class="divider"></li>
+              <?php } ?>
+
+
               <?php if(Auth::hasRoles(['developer'])) {?>
               <li class="dropdown-header">Manage Super Admins</li>
               <li><?php echo $this->Html->link(__("New Super Admin",true),array('plugin'=>false,'controller' => 'manage_roles', 'action' => 'add_superadmin')) ?></li>

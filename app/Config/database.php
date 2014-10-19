@@ -67,7 +67,7 @@ class DATABASE_CONFIG {
 		'host' => 'localhost',
 		'login' => 'root',
 		'password' => 'root',
-		'database' => 'gnu',
+		'database' => 'originalgnu',
 		'prefix' => '',
 		//'encoding' => 'utf8',
 	);

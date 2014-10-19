@@ -21,12 +21,32 @@ class CategoriesController extends SupportTicketSystemAppController {
  *
  * @return void
  */
+	public function index_developer() {
+
+		$this->loadModel('Setting');
+		$data = $this->Setting->find('first', array('recursive' => - 1));
+		$pagination_value = $data['Setting']['pagination_value'];
+		$this->Paginator->settings = array(
+			'limit' => $pagination_value,
+			'page' => 1,
+			'contain' => ['Institution','Department']);
+		$this->set('categories', $this->Paginator->paginate());
+	}
+
 	public function index() {
 
 		$this->loadModel('Setting');
-		$data = $this->Setting->find('first');
+		$this->loadModel('Staff');
+		$data = $this->Setting->find('first', array('recursive' => - 1));
+		$staffid = $this->Auth->user('staff_id');
+		$data1=$this->Staff->find('first',['conditions'=>['Staff.id'=>$staffid]]);
+		$data2 = $data1['Staff']['institution_id'];
 		$pagination_value = $data['Setting']['pagination_value'];
-		$this->Paginator->settings = array('limit' => $pagination_value,'page' => 1);
+		$this->Paginator->settings = array(
+			'limit' => $pagination_value,
+			'page' => 1,
+			'contain' => ['Institution','Department'],
+			'conditions'=> array('Category.institution_id'=>$data2));
 		$this->set('categories', $this->Paginator->paginate());
 	}
 
@@ -60,7 +80,9 @@ class CategoriesController extends SupportTicketSystemAppController {
 			$data = $this->Staff->find('first',['conditions'=>['Staff.id'=>$userid]]);
 	    	$this->request->data['Category']['institution_id'] = $data['Staff']['institution_id'];
 			if ($this->Category->save($this->request->data,true,array('name','institution_id','department_id'))) {
-				$this->Session->setFlash(__('The category has been saved.'));
+				$this->Session->setFlash(__('The category has been saved.') , 'alert', array(
+				'class' => 'alert-success'
+			));
 				return $this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The category could not be saved. Please, try again.'));
