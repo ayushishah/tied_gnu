@@ -1,6 +1,6 @@
 <div class="row">
           <div class="col-lg-6">
-<?php echo $this->Html->script('SupportTicketSystem.chained_dropdown');?>
+<?php echo $this->Html->script('SupportTicketSystem.chain_coordinator');?>
 <div class="ticketManages form">
 <?php echo $this->Form->create('TicketManage', array(
 	'inputDefaults' => array(
@@ -25,12 +25,20 @@ $emptyDepartment = count($departments) > 0 ? Configure::read('Select.defaultAfte
 );
 $emptyStaff     = count($staffs) > 0 ? Configure::read('Select.defaultAfter') : array('0' => Configure::read('Select.naBefore') . __('Select Department First') . Configure::read('Select.naAfter')
 );
+$urlb            = $this->Html->url(array('controller' => 'categories', 'plugin'=>'support_ticket_system',
+'action' => 'list_category',
+'ext' => 'json'
+));
+$emptyCategory = count($categories) > 0 ? Configure::read('Select.defaultAfter') : array('0' => Configure::read('Select.naBefore') . __('Select Department First') . Configure::read('Select.naAfter')
+);
+
 echo $this->Form->input('institution_id', array('id' => 'institutions','empty' => 'Please Select First',
 'rel' => $url
 ));
-echo $this->Form->input('department_id', array('id' => 'departments','empty' => $emptyDepartment,'rel' => $urla));
+echo $this->Form->input('department_id', array('id' => 'departments','empty' => $emptyDepartment,'rel' => $urla,
+	'data-rel' => $urlb));
 echo $this->Form->input('staff_id', array('id' => 'staffs','empty' => $emptyStaff));
-echo $this->Form->input('category_id');
+echo $this->Form->input('category_id', array('id' => 'categories','empty' => $emptyCategory));
 	?>
 	<?php echo $this->Form->submit('Submit', array(
 				'div' => false,

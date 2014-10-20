@@ -40,7 +40,7 @@ public $validate = array(
  *
  * @var array
  */
-	public $hasMany = ['SupportTicketSystem.Ticket','SupportTicketSystem.TicketManage'];
+	public $hasMany = ['SupportTicketSystem.Ticket','SupportTicketSystem.TicketManage','SupportTicketSystem.DepartmentTransfer'];
     public $belongsTo = ['Institution','Department'];
 
     public function getListByDepartment($cid = null) {

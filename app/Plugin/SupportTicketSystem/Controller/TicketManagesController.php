@@ -66,8 +66,7 @@ class TicketManagesController extends SupportTicketSystemAppController {
 		}
         unset($this->request->data);
 		$institutions = $this->TicketManage->Staff->Institution->find('list');
-		$categories = $this->TicketManage->Category->find('list',['conditions' => ['Category.recstatus' => 1,
-																					'Category.flag'=>0]]);
+		$categories = [];
 		$departments = [];
 		$staffs = [];
 		$this->set(compact('institutions', 'departments', 'staffs','categories'));
@@ -108,6 +107,44 @@ class TicketManagesController extends SupportTicketSystemAppController {
 		$categories = [];
 		$staffs = [];
 		$this->set(compact('departments', 'staffs','categories'));
+
+	}
+
+
+
+public function add_deptcoord() {
+		if ($this->request->is('post') && $this->request->data['TicketManage']['staff_id'] != 0) {
+			$this->TicketManage->create();
+			if ($this->TicketManage->save($this->request->data,true,array('category_id','staff_id','creator_id'))) {
+				$this->request->data['Category']['id'] = $this->request->data['TicketManage']['category_id'];
+			    $this->request->data['Category']['flag'] = 1;
+			    if($this->TicketManage->Category->save($this->request->data,true,['id','flag','modifier_id'])) {
+			    	$this->loadModel('UserRole');
+			    	$this->loadModel('User');
+			    	$staffid = $this->request->data['TicketManage']['staff_id'];
+			    	$data = $this->User->find('first',['conditions'=>['User.staff_id'=>$staffid]]);
+			    	$this->request->data['UserRole']['user_id'] = $data['User']['id'];
+			    	$this->request->data['UserRole']['role_id'] = Configure::read('deptcoordinator');
+			    	if($this->UserRole->save($this->request->data)) {
+						$this->Session->setFlash(__('The ticket coordinator has been saved.'));
+						return $this->redirect(array('action' => 'index'));
+					}	
+				}
+			} else {
+				$this->Session->setFlash(__('The ticket coordinator could not be saved. Please, try again.'));
+			}
+
+		}
+        unset($this->request->data);
+		$this->loadModel('Staff');
+		$userid = $this->Auth->user('staff_id');
+		$instid = $this->Staff->find('first', array('fields' => ['Staff.department_id'], 'conditions' => array('Staff.id' => $userid)));
+		$staffs = $this->Staff->find('list', array(
+		      			'conditions' => array('Staff.department_id' => $instid['Staff']['department_id'])));
+		$categories = $this->TicketManage->Category->find('list',['conditions' => ['Category.recstatus' => 1,
+				'Category.flag' => 0, 'Category.department_id' => $instid['Staff']['department_id'] ]]);
+		
+		$this->set(compact( 'staffs','categories'));
 
 	}
 

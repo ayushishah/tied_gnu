@@ -1148,3 +1148,159 @@ Request URL: /gnu/support_ticket_system/js/jquery.min.map
 Stack Trace:
 #0 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2014-10-20 14:42:30 Error: [MissingControllerException] Controller class DepartmentTransferController could not be found.
+Exception Attributes: array (
+  'class' => 'DepartmentTransferController',
+  'plugin' => 'SupportTicketSystem',
+)
+Request URL: /gnu/support_ticket_system/department_transfer/change_status/1
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-10-20 15:10:56 Error: [MissingActionException] Action DepartmentTransferController::change_status() could not be found.
+Exception Attributes: array (
+  'controller' => 'DepartmentTransferController',
+  'action' => 'change_status',
+)
+Request URL: /gnu/support_ticket_system/department_transfer/change_status/1
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(DepartmentTransferController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-20 15:11:12 Error: [MissingActionException] Action DepartmentTransferController::change_status() could not be found.
+Exception Attributes: array (
+  'controller' => 'DepartmentTransferController',
+  'action' => 'change_status',
+)
+Request URL: /gnu/support_ticket_system/department_transfer/change_status/1
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(DepartmentTransferController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-20 15:12:50 Error: [MissingActionException] Action DepartmentTransferController::change_status() could not be found.
+Exception Attributes: array (
+  'controller' => 'DepartmentTransferController',
+  'action' => 'change_status',
+)
+Request URL: /gnu/support_ticket_system/department_transfer/change_status/1
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(DepartmentTransferController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-20 15:13:19 Error: [MissingViewException] View file "C:\Apache24\htdocs\gnu\app\Plugin\SupportTicketSystem\View\DepartmentTransfer\transfer.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Apache24\\htdocs\\gnu\\app\\Plugin\\SupportTicketSystem\\View\\DepartmentTransfer\\transfer.ctp',
+)
+Request URL: /gnu/support_ticket_system/department_transfer/transfer/1
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\View\View.php(457): View->_getViewFileName(NULL)
+#1 C:\Apache24\htdocs\gnu\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(DepartmentTransferController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-10-20 15:14:18 Error: [MissingViewException] View file "C:\Apache24\htdocs\gnu\app\Plugin\SupportTicketSystem\View\DepartmentTransfer\transfer.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Apache24\\htdocs\\gnu\\app\\Plugin\\SupportTicketSystem\\View\\DepartmentTransfer\\transfer.ctp',
+)
+Request URL: /gnu/support_ticket_system/department_transfer/transfer/1
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\View\View.php(457): View->_getViewFileName(NULL)
+#1 C:\Apache24\htdocs\gnu\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(DepartmentTransferController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-10-20 15:14:22 Error: [MissingViewException] View file "C:\Apache24\htdocs\gnu\app\Plugin\SupportTicketSystem\View\DepartmentTransfer\transfer.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Apache24\\htdocs\\gnu\\app\\Plugin\\SupportTicketSystem\\View\\DepartmentTransfer\\transfer.ctp',
+)
+Request URL: /gnu/support_ticket_system/department_transfer/transfer/1
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\View\View.php(457): View->_getViewFileName(NULL)
+#1 C:\Apache24\htdocs\gnu\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(DepartmentTransferController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-10-20 15:16:58 Error: [MissingViewException] View file "C:\Apache24\htdocs\gnu\app\Plugin\SupportTicketSystem\View\DepartmentTransfer\transfer.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Apache24\\htdocs\\gnu\\app\\Plugin\\SupportTicketSystem\\View\\DepartmentTransfer\\transfer.ctp',
+)
+Request URL: /gnu/support_ticket_system/department_transfer/transfer/1
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\View\View.php(457): View->_getViewFileName(NULL)
+#1 C:\Apache24\htdocs\gnu\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(DepartmentTransferController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-10-20 15:17:44 Error: [MissingViewException] View file "C:\Apache24\htdocs\gnu\app\Plugin\SupportTicketSystem\View\DepartmentTransfer\transfer.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Apache24\\htdocs\\gnu\\app\\Plugin\\SupportTicketSystem\\View\\DepartmentTransfer\\transfer.ctp',
+)
+Request URL: /gnu/support_ticket_system/department_transfer/transfer/1
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\View\View.php(457): View->_getViewFileName(NULL)
+#1 C:\Apache24\htdocs\gnu\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(DepartmentTransferController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-10-20 15:23:53 Error: [MissingViewException] View file "C:\Apache24\htdocs\gnu\app\Plugin\SupportTicketSystem\View\DepartmentTransfer\transfer.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Apache24\\htdocs\\gnu\\app\\Plugin\\SupportTicketSystem\\View\\DepartmentTransfer\\transfer.ctp',
+)
+Request URL: /gnu/support_ticket_system/department_transfer/transfer/1
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\View\View.php(457): View->_getViewFileName(NULL)
+#1 C:\Apache24\htdocs\gnu\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(DepartmentTransferController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-10-20 15:24:35 Error: Fatal Error (64): Cannot redeclare class Ticket in [C:\Apache24\htdocs\gnu\app\Plugin\SupportTicketSystem\Model\DepartmentTransfer.php, line 21]
+2014-10-20 15:24:35 Error: [FatalErrorException] Cannot redeclare class Ticket
+Request URL: /gnu/support_ticket_system/department_transfer/transfer/1
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'C:\\Apache24\\htd...', 21)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', 'C:\\Apache24\\htd...', 21, Array)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', 'C:\\Apache24\\htd...', 21, Array)
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-20 15:58:58 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\Apache24\htdocs\gnu\app\Plugin\SupportTicketSystem\Controller\DepartmentTransferController.php, line 22]
+2014-10-20 15:58:58 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /gnu/support_ticket_system/department_transfer/transfer/1
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\Apache24\\htd...', 22)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\Apache24\\htd...', 22, Array)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\Apache24\\htd...', 22, Array)
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-20 18:37:23 Error: [MissingActionException] Action TicketManagesController::undefined() could not be found.
+Exception Attributes: array (
+  'controller' => 'TicketManagesController',
+  'action' => 'undefined',
+)
+Request URL: /gnu/support_ticket_system/ticket_manages/undefined?id=1
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TicketManagesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-20 23:44:27 Error: [MissingActionException] Action TicketManagesController::add_deptcoord() could not be found.
+Exception Attributes: array (
+  'controller' => 'TicketManagesController',
+  'action' => 'add_deptcoord',
+)
+Request URL: /gnu/support_ticket_system/ticket_manages/add_deptcoord
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TicketManagesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
