@@ -29,7 +29,12 @@
               <li><?php echo $this->Html->link(__("New Category",true),array('plugin'=>'support_ticket_system','controller' => 'categories', 'action' => 'add')) ?></li>
               <?php } ?>
 
-              <?php if(Auth::hasRoles(['superadmin','stadmin','developer'])) {?>
+              <?php if(Auth::hasRoles(['developer'])) {?>
+              <li><?php echo $this->Html->link(__("View Category",true),array('plugin'=>'support_ticket_system','controller' => 'categories', 'action' => 'index_developer'))  ?></li>
+              <li class="divider"></li>
+              <?php } ?>
+
+              <?php if(Auth::hasRoles(['superadmin','stadmin'])) {?>
               <li><?php echo $this->Html->link(__("View Category",true),array('plugin'=>'support_ticket_system','controller' => 'categories', 'action' => 'index'))  ?></li>
               <li class="divider"></li>
               <?php } ?>

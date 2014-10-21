@@ -4,15 +4,15 @@
 	<table cellpadding="0" cellspacing="0" class="table table-striped">
 	<tr>
 			<th><?php echo $this->Paginator->sort('id'); ?></th>
-			<th><?php echo $this->Paginator->sort('alias'); ?></th>
 			<th><?php echo $this->Paginator->sort('role'); ?></th>
+			<th><?php echo $this->Paginator->sort('name'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	<?php foreach ($roles as $role): ?>
 	<tr>
 		<td><?php echo h($role['Role']['id']); ?>&nbsp;</td>
-		<td><?php echo h($role['Role']['alias']); ?>&nbsp;</td>
 		<td><?php echo h($role['Role']['role']); ?>&nbsp;</td>
+		<td><?php echo h($role['Role']['name']); ?>&nbsp;</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $role['Role']['id'])); ?>
 		</td>

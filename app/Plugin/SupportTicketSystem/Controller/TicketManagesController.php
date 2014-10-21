@@ -102,8 +102,6 @@ class TicketManagesController extends SupportTicketSystemAppController {
 		$instid = $this->Staff->find('first', array('fields' => ['Staff.institution_id'], 'conditions' => array('Staff.id' => $userid)));
 		$departments = $this->TicketManage->Category->Department->find('list', array(
 		      			'conditions' => array('Department.institution_id' => $instid['Staff']['institution_id'])));
-		//$categories = $this->TicketManage->Category->find('list',['conditions' => ['Category.recstatus' => 1,
-		//					'Category.flag' => 0, 'Category.institution_id' => $instid['Staff']['institution_id'] ]]);
 		$categories = [];
 		$staffs = [];
 		$this->set(compact('departments', 'staffs','categories'));

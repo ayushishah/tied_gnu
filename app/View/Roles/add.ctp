@@ -13,7 +13,6 @@
 		<legend><?php echo __('Add Role'); ?></legend>
 	<?php
 		echo $this->Form->input('role');
-		echo $this->Form->input('alias');
 		echo $this->Form->input('name');
 	?>
 	<?php echo $this->Form->submit('Submit', array(

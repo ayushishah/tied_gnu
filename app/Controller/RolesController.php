@@ -48,6 +48,8 @@ class RolesController extends AppController {
 	public function add() {
 		if ($this->request->is('post')) {
 			$this->Role->create();
+			$this->request->data['Role']['role'] = strtolower($this->request->data['Role']['role']);
+			$this->request->data['Role']['alias'] = strtolower($this->request->data['Role']['role']);
 			if ($this->Role->save($this->request->data)) {
 				$this->Session->setFlash(__('The role has been saved.'));
 				return $this->redirect(array('action' => 'index'));

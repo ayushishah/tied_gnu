@@ -26,10 +26,10 @@ public $validate = array(
             'rule' => array('notEmpty'),
             'message' => 'You must enter a category.'
         ),
-        'unique' => array(
+        /*'unique' => array(
             'rule'    => 'isUnique',
             'message' => 'This category already exists'
-        ),
+        ),*/
     ),
 );
 	//The Associations below have been created with all possible keys, those that are not needed can be removed
