@@ -964,3 +964,25 @@ Stack Trace:
 #3 C:\Apache24\htdocs\tied_gnu\lib\Cake\Core\App.php(902): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2014-10-19 11:16:37 Error: [MissingActionException] Action CategoriesController::undefined() could not be found.
+Exception Attributes: array (
+  'controller' => 'CategoriesController',
+  'action' => 'undefined',
+)
+Request URL: /tied_gnu/support_ticket_system/categories/undefined?id=12
+Stack Trace:
+#0 C:\Apache24\htdocs\tied_gnu\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Apache24\htdocs\tied_gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Apache24\htdocs\tied_gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-19 11:17:07 Error: [MissingActionException] Action CategoriesController::undefined() could not be found.
+Exception Attributes: array (
+  'controller' => 'CategoriesController',
+  'action' => 'undefined',
+)
+Request URL: /tied_gnu/support_ticket_system/categories/undefined?id=22
+Stack Trace:
+#0 C:\Apache24\htdocs\tied_gnu\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Apache24\htdocs\tied_gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Apache24\htdocs\tied_gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
