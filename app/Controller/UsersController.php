@@ -24,8 +24,26 @@ class UsersController extends AppController {
         $fullname = $this->Auth->user('fullname');
         $modified = $this->Auth->user('modified');
         $this->set(compact('fullname','modified'));
+        $staffid = $this->Auth->user('staff_id');
+        $studentid = $this->Auth->user('student_id');
+        if($staffid != 0)
+        {
+            $data = $this->User->Staff->find('first', array('fields' => array('Staff.institution_id','Staff.department_id'), 'conditions' => array('Staff.id' => $staffid)));
+            $this->Session->write('institution_id',$data['Staff']['institution_id']);
+            $this->Session->write('department_id',$data['Staff']['department_id']);
+        } 
+
+        elseif ($studentid != 0) {
+            $data = $this->User->Student->find('first', array('fields' => array('Student.institution_id','Student.degree_id'), 'conditions' => array('Student.id' => $studentid)));
+            $this->Session->write('institution_id',$data['Student']['institution_id']);
+            $data1 = $this->User->Student->Degree->find('first', array('fields' => array('Degree.department_id'), 'conditions' => array('Degree.id' => $data['Student']['degree_id'])));
+            $this->Session->write('department_id',$data1['Degree']['department_id']);
+        }
 	}
 
+
+
+    
 /**
  * add method
  *

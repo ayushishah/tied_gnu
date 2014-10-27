@@ -1,4 +1,4 @@
-<?php debug($tickets); ?>
+
 <div class="table-responsive">
 <div class="tickets index">
 	<h2><?php echo __('Tickets'); ?></h2>
@@ -32,6 +32,7 @@
 		</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('', true), array('action' => 'view', $ticket['Ticket']['id']), array('class' => 'glyphicon glyphicon-search')); ?>
+			
 		</td>
 	</tr>
 <?php endforeach; ?>
