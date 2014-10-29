@@ -2327,3 +2327,47 @@ Stack Trace:
 #1 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(DepartmentTransfersController), Object(CakeRequest), Object(CakeResponse))
 #2 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2014-10-28 14:48:28 Error: [MissingActionException] Action DepartmentTransfersController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'DepartmentTransfersController',
+  'action' => 'index',
+)
+Request URL: /gnu/support_ticket_system/department_transfers
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(DepartmentTransfersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-28 18:59:07 Error: [MissingActionException] Action DepartmentTransfersController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'DepartmentTransfersController',
+  'action' => 'index',
+)
+Request URL: /gnu/support_ticket_system/department_transfers
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(DepartmentTransfersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-28 19:04:21 Error: [MissingActionException] Action DepartmentTransfersController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'DepartmentTransfersController',
+  'action' => 'index',
+)
+Request URL: /gnu/support_ticket_system/department_transfers
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(DepartmentTransfersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-28 19:04:24 Error: [MissingActionException] Action DepartmentTransfersController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'DepartmentTransfersController',
+  'action' => 'index',
+)
+Request URL: /gnu/support_ticket_system/department_transfers
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(DepartmentTransfersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

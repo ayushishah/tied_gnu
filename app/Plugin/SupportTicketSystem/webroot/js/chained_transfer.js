@@ -11,7 +11,7 @@ $(function() {
                     destination.empty(),
                     destination.append('<option value="Please Select">Please Select</option>');
                     appendData(response.categories, destination); 
-            },
+            }},
 
             error: function(response) {
                 alert("An error occurred: " + e.responseText.message);

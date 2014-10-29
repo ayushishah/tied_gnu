@@ -32,14 +32,17 @@ class DepartmentTransfersController extends SupportTicketSystemAppController {
 
 			if ($this->DepartmentTransfer->save($this->request->data,true,array('ticket_id','department_id','category_id','staff_id','status_id',
 				'reasons_for_transfer'))) {
+				$this->request->data['Ticket']['id'] = $id;
+				$this->request->data['Ticket']['status_id'] = Configure::read('Transferred');
+				if ($this->DepartmentTransfer->Ticket->save($this->request->data)){
 				$this->Session->setFlash(__('Transferred.') , 'alert', array(
 				'class' => 'alert-success'
 			));
-				return $this->redirect(array('action' => 'index'));
-			} else {
+				return $this->redirect(array('controller' => 'tickets','action' => 'manage_tickets'));
+			 }else {
 				$this->Session->setFlash(__('The category could not be saved. Please, try again.'));
 			}
-		}
+		}}
 		unset($this->request->data);
 		$this->loadModel('Staff');
 		$userid = $this->Auth->user('staff_id');
