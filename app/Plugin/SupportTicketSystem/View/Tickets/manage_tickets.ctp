@@ -32,7 +32,7 @@
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $ticket['Ticket']['id'])); ?>
 			<?php echo $this->Html->link(__('Change Ticket Status'), array('action' => 'change_status', $ticket['Ticket']['id'])); ?>
-			<?php echo $this->Html->link(__('  Transfer it!'), array('controller'=>'department_transfer','plugin'=> 'support_ticket_system','action' => 'transfer', $ticket['Ticket']['id'])); ?>
+			<?php echo $this->Html->link(__('  Transfer it!'), array('controller'=>'department_transfers','plugin'=> 'support_ticket_system','action' => 'transfer', $ticket['Ticket']['id'])); ?>
 		</td>
 	</tr>
 <?php endforeach; ?>

@@ -139,4 +139,3 @@ Configure::write('deptcoordinator',6);
 Configure::write('stcoordinator',7);
 Configure::write('user',8);
 
-

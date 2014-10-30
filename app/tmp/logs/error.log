@@ -1658,3 +1658,716 @@ Stack Trace:
 #8 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
 #9 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #10 {main}
+2014-10-22 15:04:49 Error: [MissingActionException] Action CategoriesController::undefined() could not be found.
+Exception Attributes: array (
+  'controller' => 'CategoriesController',
+  'action' => 'undefined',
+)
+Request URL: /gnu/support_ticket_system/categories/undefined?id=2
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-22 15:04:56 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'Canteen' for key 'name'
+Request URL: /gnu/support_ticket_system/categories/add_developer
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `gn...', Array)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `gn...')
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Model\Model.php(1832): DboSource->create(Object(Category), Array, Array)
+#4 C:\Apache24\htdocs\gnu\app\Plugin\SupportTicketSystem\Controller\CategoriesController.php(107): Model->save(Array, true, Array)
+#5 [internal function]: CategoriesController->add_developer()
+#6 C:\Apache24\htdocs\gnu\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#7 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-10-22 15:05:22 Error: [MissingActionException] Action CategoriesController::undefined() could not be found.
+Exception Attributes: array (
+  'controller' => 'CategoriesController',
+  'action' => 'undefined',
+)
+Request URL: /gnu/support_ticket_system/categories/undefined?id=2
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-22 15:49:37 Error: [MissingActionException] Action TicketManagesController::index_developer() could not be found.
+Exception Attributes: array (
+  'controller' => 'TicketManagesController',
+  'action' => 'index_developer',
+)
+Request URL: /gnu/support_ticket_system/ticket_manages/index_developer
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TicketManagesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-27 00:53:40 Error: Fatal Error (4): syntax error, unexpected '=', expecting ')' in [C:\Apache24\htdocs\gnu\app\Plugin\SupportTicketSystem\Controller\TicketsController.php, line 128]
+2014-10-27 00:53:40 Error: [FatalErrorException] syntax error, unexpected '=', expecting ')'
+Request URL: /gnu/support_ticket_system/tickets/add
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\Apache24\\htd...', 128)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\Apache24\\htd...', 128, Array)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\Apache24\\htd...', 128, Array)
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-27 00:57:33 Error: Fatal Error (4): syntax error, unexpected '=', expecting ')' in [C:\Apache24\htdocs\gnu\app\Plugin\SupportTicketSystem\Controller\TicketsController.php, line 128]
+2014-10-27 00:57:33 Error: [FatalErrorException] syntax error, unexpected '=', expecting ')'
+Request URL: /gnu/support_ticket_system/tickets/add
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\Apache24\\htd...', 128)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\Apache24\\htd...', 128, Array)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\Apache24\\htd...', 128, Array)
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-27 01:13:15 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '>Session->read(department_id))  WHERE `Category`.`recstatus` = '1'' at line 1
+Request URL: /gnu/support_ticket_system/tickets/add
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Categor...', Array)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Categor...', false)
+#4 C:\Apache24\htdocs\gnu\lib\Cake\Model\Model.php(2902): DboSource->read(Object(Category), Array)
+#5 C:\Apache24\htdocs\gnu\lib\Cake\Model\Model.php(2874): Model->_readDataSource('list', Array)
+#6 C:\Apache24\htdocs\gnu\app\Plugin\SupportTicketSystem\Controller\TicketsController.php(133): Model->find('list', Array)
+#7 [internal function]: TicketsController->add()
+#8 C:\Apache24\htdocs\gnu\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TicketsController), Array)
+#9 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TicketsController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-10-27 01:17:14 Error: Fatal Error (4): syntax error, unexpected '$userid' (T_VARIABLE), expecting function (T_FUNCTION) in [C:\Apache24\htdocs\gnu\app\Controller\UsersController.php, line 30]
+2014-10-27 01:17:14 Error: [FatalErrorException] syntax error, unexpected '$userid' (T_VARIABLE), expecting function (T_FUNCTION)
+Request URL: /gnu/dashboard
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\Apache24\\htd...', 30)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\Apache24\\htd...', 30, Array)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\Apache24\\htd...', 30, Array)
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-27 01:18:44 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '>Session->read(department_id))  WHERE `Category`.`recstatus` = '1'' at line 1
+Request URL: /gnu/support_ticket_system/tickets/add
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Categor...', Array)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Categor...', false)
+#4 C:\Apache24\htdocs\gnu\lib\Cake\Model\Model.php(2902): DboSource->read(Object(Category), Array)
+#5 C:\Apache24\htdocs\gnu\lib\Cake\Model\Model.php(2874): Model->_readDataSource('list', Array)
+#6 C:\Apache24\htdocs\gnu\app\Plugin\SupportTicketSystem\Controller\TicketsController.php(133): Model->find('list', Array)
+#7 [internal function]: TicketsController->add()
+#8 C:\Apache24\htdocs\gnu\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TicketsController), Array)
+#9 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TicketsController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-10-27 01:19:13 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\Apache24\htdocs\gnu\app\Controller\UsersController.php, line 32]
+2014-10-27 01:19:13 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /gnu/dashboard
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\Apache24\\htd...', 32)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\Apache24\\htd...', 32, Array)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\Apache24\\htd...', 32, Array)
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-27 01:19:34 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Department.institution_id' in 'where clause'
+Request URL: /gnu/dashboard
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Staff`....', Array)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `Staff`....', Array, Array)
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Staff`....', false)
+#4 C:\Apache24\htdocs\gnu\lib\Cake\Model\Model.php(2902): DboSource->read(Object(Staff), Array)
+#5 C:\Apache24\htdocs\gnu\lib\Cake\Model\Model.php(2874): Model->_readDataSource('first', Array)
+#6 C:\Apache24\htdocs\gnu\app\Controller\UsersController.php(32): Model->find('first', Array)
+#7 [internal function]: UsersController->dashboard()
+#8 C:\Apache24\htdocs\gnu\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-10-27 01:21:42 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Department.institution_id' in 'where clause'
+Request URL: /gnu/dashboard
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Staff`....', Array)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `Staff`....', Array, Array)
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Staff`....', false)
+#4 C:\Apache24\htdocs\gnu\lib\Cake\Model\Model.php(2902): DboSource->read(Object(Staff), Array)
+#5 C:\Apache24\htdocs\gnu\lib\Cake\Model\Model.php(2874): Model->_readDataSource('first', Array)
+#6 C:\Apache24\htdocs\gnu\app\Controller\UsersController.php(32): Model->find('first', Array)
+#7 [internal function]: UsersController->dashboard()
+#8 C:\Apache24\htdocs\gnu\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-10-27 01:22:20 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Department.institution_id' in 'where clause'
+Request URL: /gnu/dashboard
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Staff`....', Array)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `Staff`....', Array, Array)
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Staff`....', false)
+#4 C:\Apache24\htdocs\gnu\lib\Cake\Model\Model.php(2902): DboSource->read(Object(Staff), Array)
+#5 C:\Apache24\htdocs\gnu\lib\Cake\Model\Model.php(2874): Model->_readDataSource('first', Array)
+#6 C:\Apache24\htdocs\gnu\app\Controller\UsersController.php(32): Model->find('first', Array)
+#7 [internal function]: UsersController->dashboard()
+#8 C:\Apache24\htdocs\gnu\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-10-27 01:22:46 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Department.institution_id' in 'where clause'
+Request URL: /gnu/dashboard
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Staff`....', Array)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `Staff`....', Array, Array)
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Staff`....', false)
+#4 C:\Apache24\htdocs\gnu\lib\Cake\Model\Model.php(2902): DboSource->read(Object(Staff), Array)
+#5 C:\Apache24\htdocs\gnu\lib\Cake\Model\Model.php(2874): Model->_readDataSource('first', Array)
+#6 C:\Apache24\htdocs\gnu\app\Controller\UsersController.php(32): Model->find('first', Array)
+#7 [internal function]: UsersController->dashboard()
+#8 C:\Apache24\htdocs\gnu\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-10-27 01:25:35 Error: Fatal Error (4): syntax error, unexpected 'institution_id' (T_STRING) in [C:\Apache24\htdocs\gnu\app\Controller\UsersController.php, line 29]
+2014-10-27 01:25:35 Error: [FatalErrorException] syntax error, unexpected 'institution_id' (T_STRING)
+Request URL: /gnu/dashboard
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\Apache24\\htd...', 29)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\Apache24\\htd...', 29, Array)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\Apache24\\htd...', 29, Array)
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-27 10:32:17 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Department.institution_id' in 'where clause'
+Request URL: /gnu/dashboard
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Staff`....', Array)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `Staff`....', Array, Array)
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Staff`....', false)
+#4 C:\Apache24\htdocs\gnu\lib\Cake\Model\Model.php(2902): DboSource->read(Object(Staff), Array)
+#5 C:\Apache24\htdocs\gnu\lib\Cake\Model\Model.php(2874): Model->_readDataSource('first', Array)
+#6 C:\Apache24\htdocs\gnu\app\Controller\UsersController.php(30): Model->find('first', Array)
+#7 [internal function]: UsersController->dashboard()
+#8 C:\Apache24\htdocs\gnu\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-10-27 10:32:57 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Department.institution_id' in 'where clause'
+Request URL: /gnu/dashboard
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Staff`....', Array)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `Staff`....', Array, Array)
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Staff`....', false)
+#4 C:\Apache24\htdocs\gnu\lib\Cake\Model\Model.php(2902): DboSource->read(Object(Staff), Array)
+#5 C:\Apache24\htdocs\gnu\lib\Cake\Model\Model.php(2874): Model->_readDataSource('first', Array)
+#6 C:\Apache24\htdocs\gnu\app\Controller\UsersController.php(30): Model->find('first', Array)
+#7 [internal function]: UsersController->dashboard()
+#8 C:\Apache24\htdocs\gnu\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-10-27 10:35:19 Error: [MissingControllerException] Controller class LogController could not be found.
+Exception Attributes: array (
+  'class' => 'LogController',
+  'plugin' => NULL,
+)
+Request URL: /gnu/log
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-10-27 11:17:10 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /gnu/css/rolenavigation.css
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-10-27 11:17:27 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /gnu/css/rolenavigation.css
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-10-27 11:17:40 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /gnu/css/rolenavigation.css
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-10-27 11:17:41 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /gnu/css/rolenavigation.css
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-10-27 11:17:42 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /gnu/css/rolenavigation.css
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-10-27 11:32:41 Error: Fatal Error (4): syntax error, unexpected 'institution_id' (T_STRING), expecting ')' in [C:\Apache24\htdocs\gnu\app\Plugin\SupportTicketSystem\Controller\TicketsController.php, line 132]
+2014-10-27 11:32:41 Error: [FatalErrorException] syntax error, unexpected 'institution_id' (T_STRING), expecting ')'
+Request URL: /gnu/support_ticket_system/tickets/add
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\Apache24\\htd...', 132)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\Apache24\\htd...', 132, Array)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\Apache24\\htd...', 132, Array)
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-27 11:33:09 Error: Fatal Error (4): syntax error, unexpected 'institution_id' (T_STRING), expecting ')' in [C:\Apache24\htdocs\gnu\app\Plugin\SupportTicketSystem\Controller\TicketsController.php, line 132]
+2014-10-27 11:33:09 Error: [FatalErrorException] syntax error, unexpected 'institution_id' (T_STRING), expecting ')'
+Request URL: /gnu/support_ticket_system/tickets/add
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\Apache24\\htd...', 132)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\Apache24\\htd...', 132, Array)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\Apache24\\htd...', 132, Array)
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-27 11:33:32 Error: Fatal Error (4): syntax error, unexpected 'institution_id' (T_STRING), expecting ')' in [C:\Apache24\htdocs\gnu\app\Plugin\SupportTicketSystem\Controller\TicketsController.php, line 132]
+2014-10-27 11:33:32 Error: [FatalErrorException] syntax error, unexpected 'institution_id' (T_STRING), expecting ')'
+Request URL: /gnu/support_ticket_system/tickets/add
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\Apache24\\htd...', 132)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\Apache24\\htd...', 132, Array)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\Apache24\\htd...', 132, Array)
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-27 11:34:10 Error: Fatal Error (4): syntax error, unexpected '=', expecting ')' in [C:\Apache24\htdocs\gnu\app\Plugin\SupportTicketSystem\Controller\TicketsController.php, line 132]
+2014-10-27 11:34:10 Error: [FatalErrorException] syntax error, unexpected '=', expecting ')'
+Request URL: /gnu/support_ticket_system/tickets/add
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\Apache24\\htd...', 132)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\Apache24\\htd...', 132, Array)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\Apache24\\htd...', 132, Array)
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-27 11:59:51 Error: [MissingActionException] Action TicketManagesController::index_developer() could not be found.
+Exception Attributes: array (
+  'controller' => 'TicketManagesController',
+  'action' => 'index_developer',
+)
+Request URL: /gnu/support_ticket_system/ticket_manages/index_developer
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(TicketManagesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-27 13:00:39 Error: [MissingViewException] View file "C:\Apache24\htdocs\gnu\app\View\Users\json\dashboard.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Apache24\\htdocs\\gnu\\app\\View\\Users\\json\\dashboard.ctp',
+)
+Request URL: /gnu/debug_kit/toolbar_access/history_state/1
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\View\JsonView.php(107): View->_getViewFileName(NULL)
+#1 C:\Apache24\htdocs\gnu\lib\Cake\Controller\Controller.php(952): JsonView->render(NULL, NULL)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Apache24\htdocs\gnu\lib\Cake\Core\Object.php(106): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#5 C:\Apache24\htdocs\gnu\lib\Cake\Controller\Component\RequestHandlerComponent.php(271): Object->requestAction('/dashboard', Array)
+#6 [internal function]: RequestHandlerComponent->beforeRedirect(Object(ToolbarAccessController), Array, NULL, true)
+#7 C:\Apache24\htdocs\gnu\lib\Cake\Utility\ObjectCollection.php(132): call_user_func_array(Array, Array)
+#8 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#9 C:\Apache24\htdocs\gnu\lib\Cake\Event\CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#10 C:\Apache24\htdocs\gnu\lib\Cake\Controller\Controller.php(765): CakeEventManager->dispatch(Object(CakeEvent))
+#11 C:\Apache24\htdocs\gnu\lib\Cake\Controller\Component\AuthComponent.php(415): Controller->redirect(Array, NULL, true)
+#12 C:\Apache24\htdocs\gnu\lib\Cake\Controller\Component\AuthComponent.php(312): AuthComponent->_unauthorized(Object(ToolbarAccessController))
+#13 [internal function]: AuthComponent->startup(Object(ToolbarAccessController))
+#14 C:\Apache24\htdocs\gnu\lib\Cake\Utility\ObjectCollection.php(132): call_user_func_array(Array, Array)
+#15 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#16 C:\Apache24\htdocs\gnu\lib\Cake\Event\CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#17 C:\Apache24\htdocs\gnu\lib\Cake\Controller\Controller.php(675): CakeEventManager->dispatch(Object(CakeEvent))
+#18 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(182): Controller->startupProcess()
+#19 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ToolbarAccessController), Object(CakeRequest), Object(CakeResponse))
+#20 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#21 {main}
+2014-10-27 13:36:55 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'transfer_date' doesn't have a default value
+Request URL: /gnu/support_ticket_system/department_transfers/transfer/1
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `gn...', Array)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `gn...')
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Model\Model.php(1832): DboSource->create(Object(DepartmentTransfer), Array, Array)
+#4 C:\Apache24\htdocs\gnu\app\Plugin\SupportTicketSystem\Controller\DepartmentTransfersController.php(29): Model->save(Array, true, Array)
+#5 [internal function]: DepartmentTransfersController->transfer('1')
+#6 C:\Apache24\htdocs\gnu\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(DepartmentTransfersController), Array)
+#7 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(DepartmentTransfersController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-10-27 13:38:40 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'transfer_date' doesn't have a default value
+Request URL: /gnu/support_ticket_system/department_transfers/transfer/1
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `gn...', Array)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `gn...')
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Model\Model.php(1832): DboSource->create(Object(DepartmentTransfer), Array, Array)
+#4 C:\Apache24\htdocs\gnu\app\Plugin\SupportTicketSystem\Controller\DepartmentTransfersController.php(29): Model->save(Array, true, Array)
+#5 [internal function]: DepartmentTransfersController->transfer('1')
+#6 C:\Apache24\htdocs\gnu\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(DepartmentTransfersController), Array)
+#7 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(DepartmentTransfersController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-10-27 13:42:13 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'transfer_date' doesn't have a default value
+Request URL: /gnu/support_ticket_system/department_transfers/transfer/1
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `gn...', Array)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `gn...')
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Model\Model.php(1832): DboSource->create(Object(DepartmentTransfer), Array, Array)
+#4 C:\Apache24\htdocs\gnu\app\Plugin\SupportTicketSystem\Controller\DepartmentTransfersController.php(29): Model->save(Array, true, Array)
+#5 [internal function]: DepartmentTransfersController->transfer('1')
+#6 C:\Apache24\htdocs\gnu\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(DepartmentTransfersController), Array)
+#7 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(DepartmentTransfersController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-10-27 13:48:06 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'transfer_date' doesn't have a default value
+Request URL: /gnu/support_ticket_system/department_transfers/transfer/1
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `gn...', Array)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `gn...')
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Model\Model.php(1832): DboSource->create(Object(DepartmentTransfer), Array, Array)
+#4 C:\Apache24\htdocs\gnu\app\Plugin\SupportTicketSystem\Controller\DepartmentTransfersController.php(30): Model->save(Array, true, Array)
+#5 [internal function]: DepartmentTransfersController->transfer('1')
+#6 C:\Apache24\htdocs\gnu\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(DepartmentTransfersController), Array)
+#7 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(DepartmentTransfersController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-10-27 13:50:25 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'transfer_date' doesn't have a default value
+Request URL: /gnu/support_ticket_system/department_transfers/transfer/1
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `gn...', Array)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `gn...')
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Model\Model.php(1832): DboSource->create(Object(DepartmentTransfer), Array, Array)
+#4 C:\Apache24\htdocs\gnu\app\Plugin\SupportTicketSystem\Controller\DepartmentTransfersController.php(30): Model->save(Array, true, Array)
+#5 [internal function]: DepartmentTransfersController->transfer('1')
+#6 C:\Apache24\htdocs\gnu\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(DepartmentTransfersController), Array)
+#7 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(DepartmentTransfersController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-10-27 13:51:25 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'new_department_id' doesn't have a default value
+Request URL: /gnu/support_ticket_system/department_transfers/transfer/1
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `gn...', Array)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `gn...')
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Model\Model.php(1832): DboSource->create(Object(DepartmentTransfer), Array, Array)
+#4 C:\Apache24\htdocs\gnu\app\Plugin\SupportTicketSystem\Controller\DepartmentTransfersController.php(30): Model->save(Array, true, Array)
+#5 [internal function]: DepartmentTransfersController->transfer('1')
+#6 C:\Apache24\htdocs\gnu\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(DepartmentTransfersController), Array)
+#7 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(DepartmentTransfersController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-10-27 13:59:00 Error: Fatal Error (4): syntax error, unexpected ',', expecting ')' in [C:\Apache24\htdocs\gnu\app\Plugin\SupportTicketSystem\View\DepartmentTransfers\transfer.ctp, line 27]
+2014-10-27 13:59:00 Error: [FatalErrorException] syntax error, unexpected ',', expecting ')'
+Request URL: /gnu/support_ticket_system/department_transfers/transfer/1
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\Apache24\\htd...', 27)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\Apache24\\htd...', 27, Array)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\Apache24\\htd...', 27, Array)
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-27 13:59:23 Error: Fatal Error (4): syntax error, unexpected ',', expecting ')' in [C:\Apache24\htdocs\gnu\app\Plugin\SupportTicketSystem\View\DepartmentTransfers\transfer.ctp, line 27]
+2014-10-27 13:59:23 Error: [FatalErrorException] syntax error, unexpected ',', expecting ')'
+Request URL: /gnu/support_ticket_system/department_transfers/transfer/1
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\Apache24\\htd...', 27)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\Apache24\\htd...', 27, Array)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\Apache24\\htd...', 27, Array)
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-27 13:59:53 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ticket_id' cannot be null
+Request URL: /gnu/support_ticket_system/department_transfers/transfer/1
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `gn...', Array)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `gn...')
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Model\Model.php(1832): DboSource->create(Object(DepartmentTransfer), Array, Array)
+#4 C:\Apache24\htdocs\gnu\app\Plugin\SupportTicketSystem\Controller\DepartmentTransfersController.php(30): Model->save(Array, true, Array)
+#5 [internal function]: DepartmentTransfersController->transfer('1')
+#6 C:\Apache24\htdocs\gnu\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(DepartmentTransfersController), Array)
+#7 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(DepartmentTransfersController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-10-27 14:06:57 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'department_id' doesn't have a default value
+Request URL: /gnu/support_ticket_system/department_transfers/transfer/1
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `gn...', Array)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `gn...')
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Model\Model.php(1832): DboSource->create(Object(DepartmentTransfer), Array, Array)
+#4 C:\Apache24\htdocs\gnu\app\Plugin\SupportTicketSystem\Controller\DepartmentTransfersController.php(30): Model->save(Array, true, Array)
+#5 [internal function]: DepartmentTransfersController->transfer('1')
+#6 C:\Apache24\htdocs\gnu\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(DepartmentTransfersController), Array)
+#7 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(DepartmentTransfersController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-10-27 14:10:20 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'staff_id' doesn't have a default value
+Request URL: /gnu/support_ticket_system/department_transfers/transfer/1
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `gn...', Array)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `gn...')
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Model\Model.php(1832): DboSource->create(Object(DepartmentTransfer), Array, Array)
+#4 C:\Apache24\htdocs\gnu\app\Plugin\SupportTicketSystem\Controller\DepartmentTransfersController.php(33): Model->save(Array, true, Array)
+#5 [internal function]: DepartmentTransfersController->transfer('1')
+#6 C:\Apache24\htdocs\gnu\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(DepartmentTransfersController), Array)
+#7 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(DepartmentTransfersController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-10-27 14:11:02 Error: [MissingActionException] Action DepartmentTransfersController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'DepartmentTransfersController',
+  'action' => 'index',
+)
+Request URL: /gnu/support_ticket_system/department_transfers
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(DepartmentTransfersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-27 14:14:58 Error: [MissingActionException] Action DepartmentTransfersController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'DepartmentTransfersController',
+  'action' => 'index',
+)
+Request URL: /gnu/support_ticket_system/department_transfers
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(DepartmentTransfersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-27 14:15:11 Error: Fatal Error (1): Call to undefined function NOW() in [C:\Apache24\htdocs\gnu\app\Plugin\SupportTicketSystem\Controller\DepartmentTransfersController.php, line 25]
+2014-10-27 14:15:11 Error: [FatalErrorException] Call to undefined function NOW()
+Request URL: /gnu/support_ticket_system/department_transfers/transfer/1
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\\Apache24\\htd...', 25)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\\Apache24\\htd...', 25, Array)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\\Apache24\\htd...', 25, Array)
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-27 14:16:25 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'transfer_date' doesn't have a default value
+Request URL: /gnu/support_ticket_system/department_transfers/transfer/1
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `gn...', Array)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `gn...')
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Model\Model.php(1832): DboSource->create(Object(DepartmentTransfer), Array, Array)
+#4 C:\Apache24\htdocs\gnu\app\Plugin\SupportTicketSystem\Controller\DepartmentTransfersController.php(34): Model->save(Array, true, Array)
+#5 [internal function]: DepartmentTransfersController->transfer('1')
+#6 C:\Apache24\htdocs\gnu\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(DepartmentTransfersController), Array)
+#7 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(DepartmentTransfersController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-10-27 14:18:55 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'transfer_date' doesn't have a default value
+Request URL: /gnu/support_ticket_system/department_transfers/transfer/1
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `gn...', Array)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `gn...')
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Model\Model.php(1832): DboSource->create(Object(DepartmentTransfer), Array, Array)
+#4 C:\Apache24\htdocs\gnu\app\Plugin\SupportTicketSystem\Controller\DepartmentTransfersController.php(34): Model->save(Array, true, Array)
+#5 [internal function]: DepartmentTransfersController->transfer('1')
+#6 C:\Apache24\htdocs\gnu\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(DepartmentTransfersController), Array)
+#7 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(DepartmentTransfersController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-10-27 14:19:14 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'transfer_date' doesn't have a default value
+Request URL: /gnu/support_ticket_system/department_transfers/transfer/1
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `gn...', Array)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `gn...')
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Model\Model.php(1832): DboSource->create(Object(DepartmentTransfer), Array, Array)
+#4 C:\Apache24\htdocs\gnu\app\Plugin\SupportTicketSystem\Controller\DepartmentTransfersController.php(34): Model->save(Array, true, Array)
+#5 [internal function]: DepartmentTransfersController->transfer('1')
+#6 C:\Apache24\htdocs\gnu\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(DepartmentTransfersController), Array)
+#7 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(DepartmentTransfersController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-10-27 14:20:58 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'status_id' doesn't have a default value
+Request URL: /gnu/support_ticket_system/department_transfers/transfer/1
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `gn...', Array)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `gn...')
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Model\Model.php(1832): DboSource->create(Object(DepartmentTransfer), Array, Array)
+#4 C:\Apache24\htdocs\gnu\app\Plugin\SupportTicketSystem\Controller\DepartmentTransfersController.php(33): Model->save(Array, true, Array)
+#5 [internal function]: DepartmentTransfersController->transfer('1')
+#6 C:\Apache24\htdocs\gnu\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(DepartmentTransfersController), Array)
+#7 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(DepartmentTransfersController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-10-27 21:46:55 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'status_id' doesn't have a default value
+Request URL: /gnu/support_ticket_system/department_transfers/transfer/1
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `gn...', Array)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `gn...')
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Model\Model.php(1832): DboSource->create(Object(DepartmentTransfer), Array, Array)
+#4 C:\Apache24\htdocs\gnu\app\Plugin\SupportTicketSystem\Controller\DepartmentTransfersController.php(33): Model->save(Array, true, Array)
+#5 [internal function]: DepartmentTransfersController->transfer('1')
+#6 C:\Apache24\htdocs\gnu\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(DepartmentTransfersController), Array)
+#7 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(DepartmentTransfersController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-10-27 21:47:14 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'status_id' doesn't have a default value
+Request URL: /gnu/support_ticket_system/department_transfers/transfer/1
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `gn...', Array)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `gn...')
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Model\Model.php(1832): DboSource->create(Object(DepartmentTransfer), Array, Array)
+#4 C:\Apache24\htdocs\gnu\app\Plugin\SupportTicketSystem\Controller\DepartmentTransfersController.php(33): Model->save(Array, true, Array)
+#5 [internal function]: DepartmentTransfersController->transfer('1')
+#6 C:\Apache24\htdocs\gnu\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(DepartmentTransfersController), Array)
+#7 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(DepartmentTransfersController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-10-27 21:48:02 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'status_id' doesn't have a default value
+Request URL: /gnu/support_ticket_system/department_transfers/transfer/1
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `gn...', Array)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `gn...')
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Model\Model.php(1832): DboSource->create(Object(DepartmentTransfer), Array, Array)
+#4 C:\Apache24\htdocs\gnu\app\Plugin\SupportTicketSystem\Controller\DepartmentTransfersController.php(33): Model->save(Array, true, Array)
+#5 [internal function]: DepartmentTransfersController->transfer('1')
+#6 C:\Apache24\htdocs\gnu\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(DepartmentTransfersController), Array)
+#7 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(DepartmentTransfersController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-10-27 21:52:58 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'status_id' doesn't have a default value
+Request URL: /gnu/support_ticket_system/department_transfers/transfer/1
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `gn...', Array)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `gn...')
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Model\Model.php(1832): DboSource->create(Object(DepartmentTransfer), Array, Array)
+#4 C:\Apache24\htdocs\gnu\app\Plugin\SupportTicketSystem\Controller\DepartmentTransfersController.php(34): Model->save(Array, true, Array)
+#5 [internal function]: DepartmentTransfersController->transfer('1')
+#6 C:\Apache24\htdocs\gnu\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(DepartmentTransfersController), Array)
+#7 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(DepartmentTransfersController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-10-27 21:54:03 Error: Fatal Error (4): syntax error, unexpected ''reasons_for_transfer'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [C:\Apache24\htdocs\gnu\app\Plugin\SupportTicketSystem\Controller\DepartmentTransfersController.php, line 34]
+2014-10-27 21:54:03 Error: [FatalErrorException] syntax error, unexpected ''reasons_for_transfer'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /gnu/support_ticket_system/department_transfers/transfer/1
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\Apache24\\htd...', 34)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\Apache24\\htd...', 34, Array)
+#2 C:\Apache24\htdocs\gnu\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\Apache24\\htd...', 34, Array)
+#3 C:\Apache24\htdocs\gnu\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-27 21:54:36 Error: [MissingActionException] Action DepartmentTransfersController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'DepartmentTransfersController',
+  'action' => 'index',
+)
+Request URL: /gnu/support_ticket_system/department_transfers
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(DepartmentTransfersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-28 14:48:28 Error: [MissingActionException] Action DepartmentTransfersController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'DepartmentTransfersController',
+  'action' => 'index',
+)
+Request URL: /gnu/support_ticket_system/department_transfers
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(DepartmentTransfersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-28 18:59:07 Error: [MissingActionException] Action DepartmentTransfersController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'DepartmentTransfersController',
+  'action' => 'index',
+)
+Request URL: /gnu/support_ticket_system/department_transfers
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(DepartmentTransfersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-28 19:04:21 Error: [MissingActionException] Action DepartmentTransfersController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'DepartmentTransfersController',
+  'action' => 'index',
+)
+Request URL: /gnu/support_ticket_system/department_transfers
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(DepartmentTransfersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-28 19:04:24 Error: [MissingActionException] Action DepartmentTransfersController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'DepartmentTransfersController',
+  'action' => 'index',
+)
+Request URL: /gnu/support_ticket_system/department_transfers
+Stack Trace:
+#0 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Apache24\htdocs\gnu\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(DepartmentTransfersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Apache24\htdocs\gnu\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

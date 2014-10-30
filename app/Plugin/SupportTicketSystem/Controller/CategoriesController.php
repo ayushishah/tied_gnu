@@ -132,7 +132,8 @@ class CategoriesController extends SupportTicketSystemAppController {
  * edit method
  *
  * @throws NotFoundException
- * @param int $id
+ * @param int 
+ *
  * @return void
  */
 	public function edit($id = null) {
@@ -214,6 +215,19 @@ class CategoriesController extends SupportTicketSystemAppController {
 
 			$this->disableCache();
 			$categories = $this->Category->getListByDepartment($id);
+			$this->set(compact('categories'));
+			$this->set('_serialize', array('categories'));
+	}
+
+	public function list_categories(){
+    		$this->request->onlyAllow('ajax');
+			$id = $this->request->query('id');
+			if (!$id) {
+				throw new NotFoundException();
+			}
+
+			$this->disableCache();
+			$categories = $this->Category->getListByDepartments($id);
 			$this->set(compact('categories'));
 			$this->set('_serialize', array('categories'));
 	}

@@ -125,16 +125,23 @@ class TicketsController extends SupportTicketSystemAppController {
               'type'  => 'right',
               'conditions' => array(
                  'TicketManage.category_id = Category.id',
-                 'TicketManage.recstatus = 1'
+                 'TicketManage.recstatus = 1' , 
               )
            )
         ),
-			'conditions' => array('Category.recstatus' => 1)
+			'conditions' => array('Category.recstatus' => 1,'Category.institution_id' => $this->Session->read('institution_id'),
+                 'Category.department_id' => $this->Session->read('department_id')),
 			));
 		$statuses = $this->Ticket->Status->find('list',['conditions'=>['Status.recstatus'=>1]]);
 		$this->set(compact('categories', 'statuses'));
+		//$this->set('ins_id',$this->Session->read('institution_id'));
+		//$this->set('dep_id',$this->Session->read('department_id'));
 		
 	}
+
+
+
+
 
 
 /**

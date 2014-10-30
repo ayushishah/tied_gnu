@@ -12,8 +12,6 @@ public $components = array('Paginator');
 
 /**
 *
-* View , Index , Deactivate and Add Function Of SuperAdmin Starts From Here.
-*
 **/
 public function view_superadmin($id = null)
 {
@@ -276,7 +274,7 @@ public function add_admin()
  		      					$departments = $this->ManageRole->Department->find('list',array('conditions'=>array('Department.institution_id'=>$instid['Staff']['institution_id'])));
             						$staffs = [];
             						$roles = $this->ManageRole->Role->find('list',array(
-          							'conditions'=>array('Role.id'=>array(Configure::read('stadmin'),Configure::read('tpadmin'),Configure::read('fbadmin')))));
+          							'conditions'=>array('Role.id'=>array(Configure::read('fbadmin'),Configure::read('tpadmin'),Configure::read('stadmin')))));
           			$this->set(compact( 'departments', 'staffs','roles'));
 }
 

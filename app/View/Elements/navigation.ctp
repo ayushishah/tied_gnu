@@ -11,7 +11,7 @@
         <p style="padding-left: 20px;">   <?php echo $this->Html->image('gnulogo.png', array('alt' => 'GNU', 'border' => '0')); ?></p>
         </div>
         <h3 style="padding-left:200px;">Support Ticket System & Training And Placement Module</h3>
-      </div>
+  
       <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li><?php echo $this->Html->link(__("Home"),array('plugin'=>false,'controller' => 'users', 'action' => 'dashboard')) ?></li>

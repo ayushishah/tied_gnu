@@ -55,4 +55,16 @@ public $validate = array(
         ));
     }
 
+    public function getListByDepartments($cid = null) {
+        if (empty($cid)) {
+            return array();
+        }
+        
+        return $this->find('list', array(
+            'conditions' =>  array($this->alias . '.department_id' => $cid ,'Category.recstatus' => 1,
+                 'Category.flag' => 1)
+            
+        ));
+    }
+
 }
